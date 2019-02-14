@@ -8,7 +8,7 @@ _Tilslutt må det lastes ned en database for testing eller lage en enkel databas
 
 _Når dette er installert er du klar til å starte på guiden. Lykke til!_
 
-1. 1Installering av MySQL biblioteker (MySQL Installer)
+1. 1 Installering av MySQL biblioteker (MySQL Installer)
 
 Det må lastes ned et bibliotek eller «plugins» for at du skal få koblet opp MySQL og Visual Studio sammen. Alt dette ligger i MySQL installer som du har lastet ned før du begynte på denne guiden her. Vi starter med å legge inn Connector/NET.
 
@@ -18,6 +18,7 @@ Det er to måter å installere MySQL bibliotek på. Vi starter med den enkleste 
 
 For å installere dette gjennom MySQL installer bør installasjonen se slik ut. (Se bilde under)
 
+![MySQLInstallAdd](mysqlinstalladd.png)
 
 Start med å klikke «add» før du navigerer deg til «MySQL connectors» for å så finne «Connector/NET   Connector/NET 8.0.»
 
