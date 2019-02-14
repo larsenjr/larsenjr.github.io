@@ -1,7 +1,2 @@
-# hei
-
-Jeg kjører en test for å sjekke dette
-
-## Hvordan kan dette gå
-
-### Test
+# LarsenJR
+Dette er en testside som det legges ut diverse oppgaver igjennom skolen
