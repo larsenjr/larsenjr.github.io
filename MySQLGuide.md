@@ -20,7 +20,7 @@ For å installere dette gjennom MySQL installer bør installasjonen se slik ut. 
 
 ![MySQLInstallAdd](https://i.imgur.com/KI0TWDu.png)
 
-Start med å klikke «add» før du navigerer deg til «MySQL connectors» for å så finne `«Connector/NET &rarr; Connector/NET 8.0.»`
+Start med å klikke «add» før du navigerer deg til «MySQL connectors» for å så finne `«Connector/NET` &rarr; `Connector/NET 8.0.12»`
 
 ![MySQLInstallDrag](https://i.imgur.com/Bq2k3ue.png)
 
@@ -40,7 +40,6 @@ NB! Husk at du må restarte Visual Studio hvis du har dette oppe mens installasj
 Først må det lages et prosjekt. Prosjektet finner du på startsiden eller oppe på «file» &rarr; «New» &rarr; «new project
 
 
-:----------------------------------------------------:|:----------------------------------------------------:
 ![MySQLNewProject1](https://i.imgur.com/zKojKu7.png)  |  ![MySQLNewProject2](https://i.imgur.com/fCq0IO7.png)
 
 
@@ -65,7 +64,7 @@ Når denne vises i programmet på høyre side, `«høyreklikk»` på `«referenc
 ![MySQLAddRef](https://i.imgur.com/cTWeQ8I.png)
 
 
-Søk etter `«mysql»` i søkemenyen til høyre og «huk» av MySql.Data i menyen til venstre. Trykk `OK` når du har huket den av.
+Søk etter `«mysql»` i søkemenyen til høyre og «huk» av `MySql.Data` i menyen til venstre. Trykk `OK` når du har huket den av.
 
 ![MySQLData](https://i.imgur.com/dJWrEEq.png)
 
