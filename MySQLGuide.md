@@ -8,11 +8,11 @@ _Tilslutt må det lastes ned en database for testing eller lage en enkel databas
 
 _Når dette er installert er du klar til å starte på guiden. Lykke til!_
 
-1. 1 Installering av MySQL biblioteker (MySQL Installer)
+## 1. 1 Installering av MySQL biblioteker (MySQL Installer)
 
 Det må lastes ned et bibliotek eller «plugins» for at du skal få koblet opp MySQL og Visual Studio sammen. Alt dette ligger i MySQL installer som du har lastet ned før du begynte på denne guiden her. Vi starter med å legge inn Connector/NET.
 
-## 1.1 MySQL bibliotek (Connector/NET Versjon 6.9.12)
+## 1.2 MySQL bibliotek (Connector/NET Versjon 6.9.12)
 
 Det er to måter å installere MySQL bibliotek på. Vi starter med den enkleste gjennom MySQL installer.
 
@@ -34,7 +34,7 @@ Du kan også laste ned `Connector.NET` ved å gå til denne siden og velge rikti
 
 NB! Husk at du må restarte Visual Studio hvis du har dette oppe mens installasjonen pågår. Når installasjonen er ferdig åpner du Visual studio igjen.
 
-## 1.2 Oppsett i Visual Studio Community 2017
+## 1.3 Oppsett i Visual Studio Community 2017
 
 
 Først må det lages et prosjekt. Prosjektet finner du på startsiden eller oppe på «file»  «New»  også «new project
@@ -51,7 +51,7 @@ Det er viktig når du velger prosjekt at du velger `«Windows Forms App (.NET Fr
 1. Du setter navn på hva prosjektet skal hete.
 2. Velg hvor du vil lagre prosjektet
 
-### 1.2.1 Sette referanse til SQL biblioteket:
+### 1.3.1 Sette referanse til SQL biblioteket:
 
 For at du skal få til databaseconnection trenger vi å legge til `Connector/NET` i prosjektet.
 
@@ -122,7 +122,7 @@ Koden vil da se slik ut etter du har skrevet dette inn:
 
 ![MySQLExample2](https://i.imgur.com/8mdCiEp.png)
 
-## 1. 2 Lage enkel GUI
+## 1. 4 Lage enkel GUI
 
 For å lage et GUI gå tilbake til `«Form1.cs[Design]»` eller hva du kalte din «Windows form».
 
