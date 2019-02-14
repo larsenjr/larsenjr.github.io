@@ -20,7 +20,7 @@ For å installere dette gjennom MySQL installer bør installasjonen se slik ut. 
 
 ![MySQLInstallAdd](https://i.imgur.com/KI0TWDu.png)
 
-Start med å klikke «add» før du navigerer deg til «MySQL connectors» for å så finne `«Connector/NET &rightarrow; Connector/NET 8.0.»`
+Start med å klikke «add» før du navigerer deg til «MySQL connectors» for å så finne `«Connector/NET &rarr; Connector/NET 8.0.»`
 
 ![MySQLInstallDrag](https://i.imgur.com/Bq2k3ue.png)
 
@@ -37,7 +37,7 @@ NB! Husk at du må restarte Visual Studio hvis du har dette oppe mens installasj
 ## 1.3 Oppsett i Visual Studio Community 2017
 
 
-Først må det lages et prosjekt. Prosjektet finner du på startsiden eller oppe på «file»  «New»  også «new project
+Først må det lages et prosjekt. Prosjektet finner du på startsiden eller oppe på «file» &rarr; «New» &rarr; «new project
 
 
 :----------------------------------------------------:|:----------------------------------------------------:
@@ -55,7 +55,7 @@ Det er viktig når du velger prosjekt at du velger `«Windows Forms App (.NET Fr
 
 For at du skal få til databaseconnection trenger vi å legge til `Connector/NET` i prosjektet.
 
-Vi gjør dette ved å legge til en referanse. Referanser finner du ved å trykke på «view» &rightarrow; og velger «solution Explorer».
+Vi gjør dette ved å legge til en referanse. Referanser finner du ved å trykke på `«view»` &rarr; og velger `«solution Explorer»`.
 
 ![MySQLSolExp](https://i.imgur.com/N9xGe6T.png)
 
