@@ -1,4 +1,4 @@
 # LarsenJR
-Dette er en testside som det legges ut diverse oppgaver igjennom skolen
+Diverse oppgaver (og guider) gjennom Fagskolen Innlandet
 
-[Visual Studio til SQL Workbench Guide](https://larsenjr.github.io/MySQLGuide)
+..*[Visual Studio til SQL Workbench Guide](https://larsenjr.github.io/MySQLGuide)
