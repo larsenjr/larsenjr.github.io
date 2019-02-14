@@ -18,7 +18,7 @@ Det er to måter å installere MySQL bibliotek på. Vi starter med den enkleste 
 
 For å installere dette gjennom MySQL installer bør installasjonen se slik ut. (Se bilde under)
 
-![MySQLInstallAdd](mysqlinstalladd.png)
+![MySQLInstallAdd](https://i.imgur.com/KI0TWDu.png)
 
 Start med å klikke «add» før du navigerer deg til «MySQL connectors» for å så finne «Connector/NET   Connector/NET 8.0.»
 
