@@ -39,7 +39,7 @@ NB! Husk at du må restarte Visual Studio hvis du har dette oppe mens installasj
 
 Først må det lages et prosjekt. Prosjektet finner du på startsiden eller oppe på «file» &rarr; «New» &rarr; «new project»
 
-<div style="text-align: center;">
+<div style="text-align: center; display: inline;">
     <img src="https://i.imgur.com/zKojKu7.png" alt="MySQLGuide1" />
     <img src="https://i.imgur.com/fCq0IO7.png" alt="MySQLGuide2" />
 </div>
