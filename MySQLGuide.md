@@ -40,7 +40,11 @@ NB! Husk at du må restarte Visual Studio hvis du har dette oppe mens installasj
 Først må det lages et prosjekt. Prosjektet finner du på startsiden eller oppe på «file» &rarr; «New» &rarr; «new project
 
 
-![MySQLNewProject1](https://i.imgur.com/zKojKu7.png)  |  ![MySQLNewProject2](https://i.imgur.com/fCq0IO7.png)
+<center>
+![MySQLNewProject1](https://i.imgur.com/zKojKu7.png) 
+
+![MySQLNewProject2](https://i.imgur.com/fCq0IO7.png)
+</center>
 
 
 Det er viktig når du velger prosjekt at du velger `«Windows Forms App (.NET Framework)»` for at det er denne du skal jobbe med.
