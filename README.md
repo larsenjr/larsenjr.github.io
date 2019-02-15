@@ -5,4 +5,4 @@ Diverse oppgaver (og guider) gjennom Fagskolen Innlandet
 
 
 
-![MrWorldwide](img/2018-12-11_4aLkM9.png)
+![MrWorldwide](img/can_u_do_this.jpg)
