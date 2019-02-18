@@ -80,6 +80,8 @@ Du kan også velge hvilke tabeller du vil ha med i exporteringa
 ### Du har brukt diagramverktøyet til designe en database i MySQL. Du gjør endringer på diagrammet etter du har generert databasen (schemas).  Hvordan får du enkelt "overført" denne endringen til databasen (schemas)?
 
 Når du bruker modeller og endrer databasen i modellen bruker du «forward engineer» for å oppdatere databasen.
+
+![Reverseeng](img/reverseeng.png)
  
 Eller hvis du er i databasen under «schemas» og har endret databasen igjennom kode, kan du trykke på «reverse engineer» for å automatisk lage modeller andre veien. 
  
@@ -123,4 +125,4 @@ Resultat:
 
 Den andre gir resultat: 
  
-![ResultatLess](img/resultatGjennomsnitt2.png)
+![ResultatLess](img/resultatgjennomsnitt2.png)
