@@ -1,5 +1,5 @@
-#MYSQL Prøve
 
+# MYSQL Prøve
 
 
 ## 1.1 Strukturer data i tabeller etter normaliseringsprinsippet (3. normalfrom). Lag et diagram som viser tabellstrukturen. Diagrammet må vise tydelig relasjoner, primærnøkler og fremmednøkler. 
