@@ -1,38 +1,43 @@
 # INNLEVERING DIGITALTEKNIKK, OHMS LOV OG ARDUINO
 Dataelektronikk	Innlevering
 
-| Resultat fra prøve:| Mitt resultat:|
+| Dataelelektronikk:| Innleveringsfrist:|
 | :-: | :-: |
-| ![ResultatProve](img/) | ![ResultatMeProve](img/) |
-|Innleveringsfrist|-|
-Innleveringsfrist: 22.02.2019	Stian Åsvestad Larsen
-## Hva mener vi med logiske tilstander?
+| Stian Åsvestad Larsen | 22.02.2019 |
+
+
+## Hva mener vi med logiske tilstander?<br>
 Vi mener at det er bits (eller av eller på) funksjoner som blir enten 0 eller 1.
 
-4-inngangers AND-funksjon.
-a)Tegn symbolet.
+## 4-inngangers AND-funksjon.
+### a) Tegn symbolet.
 
 
-b)Skriv det boolske uttrykket.
+### b) Skriv det boolske uttrykket.
  
 
-Hvordan leser vi
-a) F=A∙B
+## Hvordan leser vi
+### a) F=A∙B
 Vi leser F = SANT OG SANT slik at strømmen går når begge er på.
 
-b) F=A+B
+### b) F=A+B
 Vi leser F = SANT ELLER SANT slik at strømmen går igjennom når enten A eller B får et 1-tall.
 
-Forenkle disse funksjonene:
-a)(B+C´)∙C´∙B´
+## Forenkle disse funksjonene:
+### a)(B+C´)∙C´∙B´
 
 Forenklet: B´∗C´ (NAND utrykk)
 
-b)CA + A + AC + AD + D
+### b)CA + A + AC + AD + D
 Forenklet: A+D (ELLER)
 
-Tegn skjema for disse uttrykkene
-a)F=AB´+C´+AD
+## Tegn skjema for disse uttrykkene
+### a) F=AB´+C´+AD
+
+Se også Proteus fil:
+ 
+
+### b) F=DE´C+AB+C
 
 
 
@@ -40,67 +45,43 @@ Se også Proteus fil:
 
  
 
-b)F=DE´C+AB+C
+## Regn ut verdien på en motstand som kobles i serie med en lysdiode. <br>
+_Lysdioden skal styres fra en l en utgang på en Arduino._
+_Lysdioden har følgende data: Spenning ved drift 2.4V og da går det 17mA igjennom lysdioden._
 
 
+## Regn
 
-Se også Proteus fil:
+## Regn ut: Strømmene `I`, `I2` og `I3`
 
- 
+## Spenningen UR4 og UR5
+## Effekten som omsettes i R4
 
-Regn ut verdien på en motstand som kobles i serie med en lysdiode. Lysdioden skal styres fra en l en utgang på en Arduino.
-Lysdioden har følgende data: Spenning ved drift 2.4V og da går det 17mA igjennom lysdioden.
- 
-
-
-
-Regn
-
-Regn
-
-ut:
-Strømmene I, I
-2
-og I
-
-3.
-Spenningen U
-R4
-og U
-
-R5
-Effekten som omsettes i R4
- 
+## Effekt over R4
 
  
 
- 
-
- 
-
-Effekt over R4
-
- 
-
-Felles for besvarelsen av oppgavene 8 og 9
+## Felles for besvarelsen av oppgavene 8 og 9
 
 Bruk funksjonen millis(), dvs dere skal IKKE bruke funksjonen delay()!
 KLASSEN i fellesskap blir enige om hvilke pinner som brukes til hva i koden så det blir likt på i alle innleveringene.
-Dokumentere koden med kommentarer, evt spill inn en video der du forklarer koden muntlig.
+Dokumentere koden med kommentarer, evt spill inn en video der du forklarer koden muntlig.<br>
 Koden skal både limes inn i Word-dokumentet og leveres separat.
-Din egen test av løsningen skal filmes og legges ut på din personlige OneDrive som du har i skoleportalen, delingslinken til filmen i skal limes i Word-dokumentet så jeg kan se på testen. OBS! Legg en liten lapp med navn og klasse ved siden av Arduino'n og pass på at den blir med i filmen. Pass på å få teste dette så dere vet andre kan få åpnet fila som linken peker på, f.eks en i klassen, venn, en i familien osv.
-Oppgave 8:
+Din egen test av løsningen skal filmes og legges ut på din personlige OneDrive som du har i skoleportalen, delingslinken til filmen i skal limes i Word-dokumentet så jeg kan se på testen. OBS! Legg en liten lapp med navn og klasse ved siden av Arduino'n og pass på at den blir med i filmen. Pass på å få teste dette så dere vet andre kan få åpnet fila som linken peker på, f.eks en i klassen, venn, en i familien osv. <br>
+## Oppgave 8:
 
 Lage trafikklys ved hjelp av lysdioder.
 
 Sekvensen skal repeteres i det uendelige.
 
-Trinn	Tid (sek.)
-1	5
-2	2
-3	10
-4	2
-Oppgave 9.
+| Trinn:| Tid(sek):|
+| :-: | :-: |
+| 1 | 5 |
+| 2 | 2 |
+| 3 | 10 |
+| 4 | 2 |
+
+## Oppgave 9.
 
 Trafikklyset for bilen skal virke som i oppgave 8 helt til det trykkes på bryteren.
 Når fotgjengeren har trykket på bryteren skjer følgende sekvens
@@ -108,12 +89,12 @@ Når fotgjengeren har trykket på bryteren skjer følgende sekvens
 2
 3
 4
-5
-FILM:
+5<>
+### FILM:<br>
 https://opplandvgs-my.sharepoint.com/:v:/g/personal/stla0904_fs-innlandet_no/Ef_cJTVJIRtHjAp-FbVOmqEBOGwWXZkKtyj-Mgtu-da5bQ?e=w00NgU
 
-Kode:
-```arduino
+### Kode:
+```csharp
 /** 
  * Oppgave 9, Trafikklys med fotgjengerfelt.
  * Stian Åsvestad larsen
