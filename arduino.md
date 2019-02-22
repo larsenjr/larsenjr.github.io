@@ -64,7 +64,7 @@ Koden skal både limes inn i Word-dokumentet og leveres separat.
 Din egen test av løsningen skal filmes og legges ut på din personlige OneDrive som du har i skoleportalen, delingslinken til filmen i skal limes i Word-dokumentet så jeg kan se på testen. <br>
 OBS! Legg en liten lapp med navn og klasse ved siden av Arduino'n og pass på at den blir med i filmen. Pass på å få teste dette så dere vet andre kan få åpnet fila som linken peker på, f.eks en i klassen, venn, en i familien osv. <br>
 ## Oppgave 8:
-```csharp
+```arduino
 /** Stian Åsvestad Larsen
  * Oppgave 8 Lyskryss uten fortauoverganger. 
  * Tid:
@@ -193,10 +193,12 @@ Trafikklyset for bilen skal virke som i oppgave 8 helt til det trykkes på bryte
 
 
 ## FILM:<br>
-https://opplandvgs-my.sharepoint.com/:v:/g/personal/stla0904_fs-innlandet_no/Ef_cJTVJIRtHjAp-FbVOmqEBOGwWXZkKtyj-Mgtu-da5bQ?e=w00NgU
+
+[Trykk her for linken til film.](https://opplandvgs-my.sharepoint.com/:v:/g/personal/stla0904_fs-innlandet_no/Ef_cJTVJIRtHjAp-FbVOmqEBOGwWXZkKtyj-Mgtu-da5bQ?e=w00NgU)
+
 
 ## Kode:
-```csharp
+```arduino
 /** 
  * Oppgave 9, Trafikklys med fotgjengerfelt.
  * Stian Åsvestad larsen
