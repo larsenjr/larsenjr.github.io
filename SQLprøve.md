@@ -1,5 +1,5 @@
-#MYSQL Prøve
 
+# MYSQL Prøve
 
 
 ## 1.1 Strukturer data i tabeller etter normaliseringsprinsippet (3. normalfrom). Lag et diagram som viser tabellstrukturen. Diagrammet må vise tydelig relasjoner, primærnøkler og fremmednøkler. 
@@ -11,7 +11,7 @@
 
 Jeg har valgt å sette opp tre tabeller der man bruker medlemsID som løpsID og postnummer som id i medlemsregisteret. Dette er for å skille data og det gjør det lettere. Det vil da si at det integreres med postnummeret og medlemsID slik at man ser hvilket medlem som har løpt hva. 
 
-## 1.2Lag SQL-skript som viser:	
+## 1.2 Lag SQL-skript som viser:	
 
 ### A) Medlemsregister der du sorter på kjønn og alder.
 Spørring
@@ -102,12 +102,12 @@ Resultat:
  
 Spørring:
 
-![ResultatCogUSA](img/sporringTotal.png)
+![SporringTotal](img/sporringTotal.png)
 
 
 | Resultat fra prøve:| Mitt resultat:|
 | :-: | :-: |
-| ![ResultatProve](img/resultat1Prove.png) | ![ResultatMeProve](img/resultatMeProve.png) |
+| ![ResultatProve](img/resultatProve.png) | ![ResultatMeProve](img/resultatMeProve.png) |
           		 
 
 ## 6. Lag en spørring som viser ordrene som er mindre enn gjennomsnittet. 
