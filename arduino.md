@@ -10,38 +10,39 @@ Vi mener at det er bits (eller av eller på) funksjoner som blir enten 0 eller 1
 
 ## 4-inngangers AND-funksjon.
 ### a) Tegn symbolet.
-
+![4ANDsymbol](img/4andfunksjon.png)
 
 ### b) Skriv det boolske uttrykket.
- 
+ ![4ANDformel](img/andboolsk.png)
 
 ## Hvordan leser vi
-### a) F=A∙B
+### a) `F=A∙B`
 Vi leser F = SANT OG SANT slik at strømmen går når begge er på.
 
-### b) F=A+B
+### b) `F=A+B`
 Vi leser F = SANT ELLER SANT slik at strømmen går igjennom når enten A eller B får et 1-tall.
 
 ## Forenkle disse funksjonene:
-### a)(B+C´)∙C´∙B´
+### a)`(B+C´)∙C´∙B´ `
 
-Forenklet: B´∗C´ (NAND utrykk)
+Forenklet: `B´∗ C´ `(NAND utrykk)
 
-### b)CA + A + AC + AD + D
-Forenklet: A+D (ELLER)
+### b) `CA + A + AC + AD + D `
+Forenklet: `A+D` (ELLER)
 
 ## Tegn skjema for disse uttrykkene
-### a) F=AB´+C´+AD
+### a) F=AB´+ C´+AD
+![4ANDformel](img/tegningA.png)
 
-Se også Proteus fil:
- 
+Se også Proteus fil: <br>
+ ![proteus5](example/oppgave5.pdsprj)
 
 ### b) F=DE´C+AB+C
 
+![4ANDformel](img/tegningB.png)
 
-
-Se også Proteus fil:
-
+Se også Proteus fil:<br>
+![proteus5b](example/oppgave5b.pdsprj)
  
 
 ## Regn ut verdien på en motstand som kobles i serie med en lysdiode. <br>
@@ -51,18 +52,16 @@ _Lysdioden har følgende data: Spenning ved drift 2.4V og da går det 17mA igjen
 
 ## Regn
 
-## Regn ut: Strømmene `I`, `I2` og `I3`
-
-## Spenningen UR4 og UR5
-## Effekten som omsettes i R4
-
-## Effekt over R4
-
- 
+## Regn ut: Strømmene `I`, `I2` og `I3`, Spenningen `UR4` og `UR5`, Effekten som omsettes i `R4`, Effekt over `R4`
+![oppgave7grafikk](img/oppgave7grafikk.png)<br>
+![oppgave7.1](img/oppgave71.png)<br>
+![oppgave7.2](img/oppgave72.png)<br>
+![oppgave7.3](img/oppgave73.png)<br>
+![oppgave7.4](img/oppgave74.png)<br>
 
 ## Felles for besvarelsen av oppgavene 8 og 9
 
-Bruk funksjonen millis(), dvs dere skal IKKE bruke funksjonen delay()!
+Bruk funksjonen `millis()`, dvs dere skal IKKE bruke funksjonen delay()!
 KLASSEN i fellesskap blir enige om hvilke pinner som brukes til hva i koden så det blir likt på i alle innleveringene.
 Dokumentere koden med kommentarer, evt spill inn en video der du forklarer koden muntlig.<br>
 Koden skal både limes inn i Word-dokumentet og leveres separat.
