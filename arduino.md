@@ -67,7 +67,111 @@ Dokumentere koden med kommentarer, evt spill inn en video der du forklarer koden
 Koden skal både limes inn i Word-dokumentet og leveres separat.
 Din egen test av løsningen skal filmes og legges ut på din personlige OneDrive som du har i skoleportalen, delingslinken til filmen i skal limes i Word-dokumentet så jeg kan se på testen. OBS! Legg en liten lapp med navn og klasse ved siden av Arduino'n og pass på at den blir med i filmen. Pass på å få teste dette så dere vet andre kan få åpnet fila som linken peker på, f.eks en i klassen, venn, en i familien osv. <br>
 ## Oppgave 8:
+```csharp
+/** Stian Åsvestad Larsen
+ * Oppgave 8 Lyskryss uten fortauoverganger. 
+ * Tid:
+ * Rød = 5sek
+ * RødGul = 2sek
+ * Grønn = 10sek
+ * Gul = 2 sek
+ * Klasse: 18IT-D
+*/
+// Definerer hvilke "pins" som skal brukes
+const int crossRed = 6;
+const int crossGreen = 7;
+const int LEDred = 8;
+const int LEDyel = 9;
+const int LEDgre = 10;
 
+
+// Millis for å lagre siste sekvens. 
+unsigned long LastMillis;
+
+// Definerer LEDstate i starten så den starter på lOW.
+int LEDstate = LOW;
+
+
+// Intervaller på LEDs. I Oppgava er disse satt til 5 sek rød,
+// 2 sek rødgul, 10sek grønn og 2 sek gul før sekvensen repeteres.
+const long RedInt = 5000;
+const long RedYelInt = 2000;
+const long YelInt = 2000;
+const long GreInt = 10000;
+
+
+// Setup for sekvensen.
+void setup() 
+
+// Definerer pins som OUTPUT
+{
+  pinMode(crossRed, OUTPUT);
+  pinMode(crossGreen, OUTPUT);
+  pinMode(LEDred,OUTPUT);
+  pinMode(LEDyel, OUTPUT);
+  pinMode(LEDgre, OUTPUT);
+
+
+  // Hvis det er behov for feilsøking
+  Serial.begin(9600);
+
+}
+
+// Setter lightState til 0. Dette er fordi sekvensen begynner på 0. 
+int lightState = 0;
+
+
+// loop
+void loop() {
+
+  unsigned long currentMillis = millis();
+
+
+// Denne IF-setningen eller sekvensen sjekker om lightState er 0 og oppdaterer den til 1. Den sjekker også om sekvensen har en intervall.   
+  if ((currentMillis - LastMillis >= YelInt) && (lightState == 0))
+  {
+      Serial.println("Rødt lys");
+      lightState = 1;
+      digitalWrite(LEDred, HIGH);
+      digitalWrite(LEDyel, LOW);
+    
+    // Oppdaterer forrige millis med denne slik at denne blir den nye "millis". LastMillis vil da være 1 etter denne sekvensen.
+    LastMillis = currentMillis;
+  }
+  if ((currentMillis - LastMillis >= RedInt) && (lightState == 1))
+  {
+      Serial.println("Rødt og gult lys");
+      lightState = 2;
+      digitalWrite(LEDred, HIGH);
+      digitalWrite(LEDyel, HIGH);
+
+    // Oppdaterer forrige millis med denne slik at denne blir den nye "millis". LastMillis vil da være 2 etter denne sekvensen. 
+      LastMillis = currentMillis;
+  }
+  if ((currentMillis - LastMillis >= RedYelInt) && (lightState == 2))
+  {
+    Serial.println("Grønt lys");
+    lightState = 3;
+    digitalWrite(LEDred, LOW);
+    digitalWrite(LEDyel, LOW);
+    digitalWrite(LEDgre, HIGH);
+
+    // Oppdaterer forrige millis med denne slik at denne blir den nye "millis". LastMillis vil da være 3 etter denne sekvensen.
+    LastMillis = currentMillis;
+  }
+  if ((currentMillis - LastMillis >= GreInt) && (lightState == 3))
+  {
+    Serial.println("Gult lys, restarter sekvens");
+    lightState = 0;
+    digitalWrite(LEDgre, LOW);
+    digitalWrite(LEDyel, HIGH);
+
+    // Oppdaterer forrige millis med denne slik at denne blir den nye "millis". LastMillis vil da være 0 etter denne sekvensen.
+    LastMillis = currentMillis;
+  }
+  
+}
+```
 Lage trafikklys ved hjelp av lysdioder.
 
 Sekvensen skal repeteres i det uendelige.
