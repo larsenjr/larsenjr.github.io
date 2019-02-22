@@ -41,13 +41,14 @@ Forenklet: `A+D` (ELLER)
 
 ## Regn ut verdien på en motstand som kobles i serie med en lysdiode. <br>
 _Lysdioden skal styres fra en l en utgang på en Arduino._
-_Lysdioden har følgende data: Spenning ved drift 2.4V og da går det 17mA igjennom lysdioden._
+_Lysdioden har følgende data: Spenning ved drift 2.4V og da går det 17mA igjennom lysdioden._<br>
 
+![oppgave6](img/oppgave71.png)<br>
 
 ## Regn ut: Strømmene `I`, `I2` og `I3`, Spenningen `UR4` og `UR5`, Effekten som omsettes i `R4`
 ![oppgave7grafikk](img/oppgave7grafikk.png)<br>
 ## Spenning `UR4` og `UR5`<br>
-![oppgave7.1](img/oppgave71.png)<br>
+
 ![oppgave7.2](img/oppgave72.png)<br>
 ![oppgave7.3](img/oppgave73.png)<br>
 
