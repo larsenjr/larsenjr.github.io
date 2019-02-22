@@ -1,5 +1,4 @@
 # INNLEVERING DIGITALTEKNIKK, OHMS LOV OG ARDUINO
-Dataelektronikk	Innlevering
 
 | Dataelelektronikk:| Innleveringsfrist:|
 | :-: | :-: |
@@ -84,16 +83,19 @@ Sekvensen skal repeteres i det uendelige.
 ## Oppgave 9.
 
 Trafikklyset for bilen skal virke som i oppgave 8 helt til det trykkes på bryteren.
-Når fotgjengeren har trykket på bryteren skjer følgende sekvens
-1
-2
-3
-4
-5<>
-### FILM:<br>
+| Når fotgjengeren har trykket på bryteren skjer følgende sekvens||
+| :-: | :-: |
+| 5 sek etter bryteren er trykket skal biltrafikken stanses etter standard sekvensen i oppgave 8. | |
+| Etter at bilene er stanset får fotgjengerne konstant grønt lys. | Dere bestemmer tiden fotgjengerne skal kunne bruke. |
+| Når tiden for grønt lys er utløpt skal den grønne lysdioden blinke 10 ganger for å varsel fotgjengerne at tiden er ute.  | 250 ms blinke/pause er ok. |
+| Fotgjengerne får rødt lys | |
+| Vent 500 ms så kan trafikklyset begynne å slippe fram bilene etter standard sekvens fra oppgave 8. | 
+
+
+## FILM:<br>
 https://opplandvgs-my.sharepoint.com/:v:/g/personal/stla0904_fs-innlandet_no/Ef_cJTVJIRtHjAp-FbVOmqEBOGwWXZkKtyj-Mgtu-da5bQ?e=w00NgU
 
-### Kode:
+## Kode:
 ```csharp
 /** 
  * Oppgave 9, Trafikklys med fotgjengerfelt.
