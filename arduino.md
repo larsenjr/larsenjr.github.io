@@ -15,7 +15,7 @@ Vi mener at det er bits (eller av eller på) funksjoner som blir enten 0 eller 1
 ### b) Skriv det boolske uttrykket.
  ![4ANDformel](img/andboolsk.png)
 
-## Hvordan leser vi
+## Hvordan leser vi:
 ### a) `F=A∙B`
 Vi leser F = SANT OG SANT slik at strømmen går når begge er på.
 
@@ -31,18 +31,12 @@ Forenklet: `B´∗ C´ `(NAND utrykk)
 Forenklet: `A+D` (ELLER)
 
 ## Tegn skjema for disse uttrykkene
-### a) F=AB´+ C´+AD
-![4ANDformel](img/tegningA.png)
+### a) `F=AB´+ C´+AD`
+![tegningforenklingA](img/tegningA.png)
 
-Se også Proteus fil: <br>
- ![proteus5](example/oppgave5.pdsprj)
+### b) `F=DE´C+AB+C`
 
-### b) F=DE´C+AB+C
-
-![4ANDformel](img/tegningB.png)
-
-Se også Proteus fil:<br>
-![proteus5b](example/oppgave5b.pdsprj)
+![tegningforenklingB](img/tegningB.png)
  
 
 ## Regn ut verdien på en motstand som kobles i serie med en lysdiode. <br>
@@ -50,22 +44,24 @@ _Lysdioden skal styres fra en l en utgang på en Arduino._
 _Lysdioden har følgende data: Spenning ved drift 2.4V og da går det 17mA igjennom lysdioden._
 
 
-## Regn
-
-## Regn ut: Strømmene `I`, `I2` og `I3`, Spenningen `UR4` og `UR5`, Effekten som omsettes i `R4`, Effekt over `R4`
+## Regn ut: Strømmene `I`, `I2` og `I3`, Spenningen `UR4` og `UR5`, Effekten som omsettes i `R4`
 ![oppgave7grafikk](img/oppgave7grafikk.png)<br>
+## Spenning `UR4` og `UR5`<br>
 ![oppgave7.1](img/oppgave71.png)<br>
 ![oppgave7.2](img/oppgave72.png)<br>
 ![oppgave7.3](img/oppgave73.png)<br>
+
+## Effekt over `R4`
 ![oppgave7.4](img/oppgave74.png)<br>
 
 ## Felles for besvarelsen av oppgavene 8 og 9
 
-Bruk funksjonen `millis()`, dvs dere skal IKKE bruke funksjonen delay()!
+Bruk funksjonen `millis()`, dvs dere skal IKKE bruke funksjonen `delay()`!
 KLASSEN i fellesskap blir enige om hvilke pinner som brukes til hva i koden så det blir likt på i alle innleveringene.
 Dokumentere koden med kommentarer, evt spill inn en video der du forklarer koden muntlig.<br>
 Koden skal både limes inn i Word-dokumentet og leveres separat.
-Din egen test av løsningen skal filmes og legges ut på din personlige OneDrive som du har i skoleportalen, delingslinken til filmen i skal limes i Word-dokumentet så jeg kan se på testen. OBS! Legg en liten lapp med navn og klasse ved siden av Arduino'n og pass på at den blir med i filmen. Pass på å få teste dette så dere vet andre kan få åpnet fila som linken peker på, f.eks en i klassen, venn, en i familien osv. <br>
+Din egen test av løsningen skal filmes og legges ut på din personlige OneDrive som du har i skoleportalen, delingslinken til filmen i skal limes i Word-dokumentet så jeg kan se på testen. <br>
+OBS! Legg en liten lapp med navn og klasse ved siden av Arduino'n og pass på at den blir med i filmen. Pass på å få teste dette så dere vet andre kan få åpnet fila som linken peker på, f.eks en i klassen, venn, en i familien osv. <br>
 ## Oppgave 8:
 ```csharp
 /** Stian Åsvestad Larsen
