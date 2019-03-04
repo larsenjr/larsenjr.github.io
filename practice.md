@@ -1,5 +1,5 @@
- ## Server config
- ```
+ # Server config
+ ```csharp
 sv_cheats 1
 mp_limitteams 0
 mp_autoteambalance 0
