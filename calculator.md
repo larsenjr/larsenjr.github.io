@@ -21,8 +21,9 @@
 <script async src="https://cdn.omnicalculator.com/sdk.js"></script>  </td>
     <td> 
       <div class="omni-calculator" data-calculator="physics/kinetic-energy" data-width="300" data-config='{}' data-currency="NOK" data-show-row-controls="false" data-version="3" data-t="1552036364608">
-  <di  </div>
-v class="omni-calculator-header">Kinetisk Energi Kalkulator</div>
+    </div>
+      
+<div class="omni-calculator-header">Kinetisk Energi Kalkulator</div>
   <div class="omni-calculator-footer">
     <a href="https://www.omnicalculator.com/physics/kinetic-energy" target="_blank"><img alt="Omni" class="omni-calculator-logo" src="https://cdn.omnicalculator.com/embed/omni-calculator-logo-long.svg" /></a>
 </div>
