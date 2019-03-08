@@ -5,8 +5,8 @@
     <tr>
         <th>Varmekalkulator</th>
         <th>Kinetisk energi kalkulator</th>
-        <th>Fritt fall kalkulator</th>
         <th>Virkningsgrad</th>
+        <th>Friksjonskalkulator</th>
     </tr>
     <tr>
         <td> 
