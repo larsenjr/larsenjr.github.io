@@ -1,7 +1,7 @@
 # LarsenJR
 Diverse oppgaver (og guider) gjennom Fagskolen Innlandet
 <h2>
-  [Kalender](https://larsenjr.github.io/fsicalendar)
+  ![Kalender](https://larsenjr.github.io/fsicalendar)
   </h2>
 
 - [Visual Studio til SQL Workbench Guide](https://larsenjr.github.io/MySQLGuide)
