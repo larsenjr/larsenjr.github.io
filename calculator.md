@@ -3,7 +3,7 @@
 
 
 
-<table style="width:100%">
+<table style="width:80%">
   <tr>
     <th> Varmekalkulator</th>
     <th> Kinetisk energi kalkulator</th> 
@@ -30,16 +30,6 @@
               <script async src="https://cdn.omnicalculator.com/sdk.js"></script>
     </td>
 
-    
-    <td>
-        <div class="omni-calculator" data-calculator="physics/free-fall" data-width="300" data-config='{}' data-currency="NOK" data-show-row-controls="false" data-version="3" data-t="1552037351404">
-            <div class="omni-calculator-header">Fritt fall kalkulator</div>
-                <div class="omni-calculator-footer">
-                <a href="https://www.omnicalculator.com/physics/free-fall" target="_blank"><img alt="Omni" class="omni-calculator-logo" src="https://cdn.omnicalculator.com/embed/omni-calculator-logo-long.svg" /></a>
-            </div>
-        </div>
-        <script async src="https://cdn.omnicalculator.com/sdk.js"></script> 
-    </td>
     <td>
             <div class="omni-calculator" data-calculator="physics/efficiency" data-width="300" data-config='{}' data-currency="NOK" data-show-row-controls="false" data-version="3" data-t="1552036438299">
                 <div class="omni-calculator-header">Virkningsgrad kalkulator</div>
@@ -59,6 +49,17 @@
         <script async src="https://cdn.omnicalculator.com/sdk.js"></script>
     </td>
     
+  </tr>
+  <tr>
+  <td>
+            <div class="omni-calculator" data-calculator="physics/free-fall" data-width="300" data-config='{}' data-currency="NOK" data-  show-row-controls="false" data-version="3" data-t="1552037351404">
+            <div class="omni-calculator-header">Fritt fall kalkulator</div>
+                <div class="omni-calculator-footer">
+                <a href="https://www.omnicalculator.com/physics/free-fall" target="_blank"><img alt="Omni" class="omni-calculator-logo" src="https://cdn.omnicalculator.com/embed/omni-calculator-logo-long.svg" /></a>
+            </div>
+        </div>
+        <script async src="https://cdn.omnicalculator.com/sdk.js"></script> 
+  </td>
   </tr>
 </table>
 
