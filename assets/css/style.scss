@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-$content-width: 90%;
+$content-width: 100%;
 .main-content {
     max-width: -webkit-calc(#{$content-width});
     max-width: calc(#{$content-width});
