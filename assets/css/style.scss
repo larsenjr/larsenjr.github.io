@@ -1,0 +1,10 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+$content-width: 90%;
+.main-content {
+    max-width: -webkit-calc(#{$content-width});
+    max-width: calc(#{$content-width});
+}
