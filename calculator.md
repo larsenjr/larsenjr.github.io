@@ -3,7 +3,7 @@
 
 
 
-<table style="width:80%">
+<table style="width:100%">
   <tr>
     <th> Varmekalkulator</th>
     <th> Kinetisk energi kalkulator</th> 
