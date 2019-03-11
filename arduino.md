@@ -182,7 +182,8 @@ Sekvensen skal repeteres i det uendelige.
 
 ## Oppgave 9.
 
-Trafikklyset for bilen skal virke som i oppgave 8 helt til det trykkes på bryteren.
+_Trafikklyset for bilen skal virke som i oppgave 8 helt til det trykkes på bryteren._
+
 | Når fotgjengeren har trykket på bryteren skjer følgende sekvens||
 | :-: | :-: |
 | 5 sek etter bryteren er trykket skal biltrafikken stanses etter standard sekvensen i oppgave 8. | |
