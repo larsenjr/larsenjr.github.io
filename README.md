@@ -4,6 +4,7 @@ Diverse oppgaver (og guider) gjennom Fagskolen Innlandet
 ## [Kalender](https://larsenjr.github.io/fsicalendar)
 <br>
 
+- [C# Prosjekter](https://github.com/larsenjr/csharp)
 - [Visual Studio til SQL Workbench Guide](https://larsenjr.github.io/MySQLGuide)
 - [MySQL Prøve](https://larsenjr.github.io/SQLprøve)
 - [Arduino Innlevering](https://larsenjr.github.io/arduino)
