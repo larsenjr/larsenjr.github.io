@@ -1,4 +1,4 @@
-# LarsenJR
+# [LarsenJR](https://larsenjr.no)
 Diverse oppgaver (og guider) gjennom Fagskolen Innlandet
 
 ## [Kalender](https://larsenjr.github.io/fsicalendar)
