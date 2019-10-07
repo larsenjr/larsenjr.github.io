@@ -13,9 +13,11 @@
 
 <link rel="icon" href="https://img.icons8.com/small/16/000000/share-2.png">
 <!---->
+</head>
+
+
 # [LarsenJR](https://larsenjr.no)
 Diverse oppgaver (og guider) gjennom Fagskolen Innlandet
-
 
 Hvis du har lyst til å være stalker og kopiere csgo-settings, feel free <br>
 # CS:GO
