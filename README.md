@@ -1,5 +1,4 @@
 
-
 # [Tilbake](https://larsenjr.no)
 
 <br>
@@ -16,11 +15,9 @@
 - [OSI Modellen](https://larsenjr.github.io/fsi2/OsiModellen)
 - [Arbeidskrav II](https://larsenjr.github.io/fsi2/arbeidskravII)
 
-<br>
-
 ## Gammelt
 
 - [C# Prosjekter](https://github.com/larsenjr/csharp)
-- [MYSQL Prøve](https://larsenjr.github.io/SQLprøve)
+- [MySQL Prøve](https://larsenjr.github.io/SQLprøve)
 - [MySQLGuide](https://larsenjr.github.io/MySQLGuide)
-- [Arduino Innlevering](https://larsenjr.github.io/arduino)
+- [Arduino Innlevering](https://larsenjr.github.io/arduino) 
