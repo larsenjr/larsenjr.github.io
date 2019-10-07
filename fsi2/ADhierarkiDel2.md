@@ -17,6 +17,7 @@
 
 ## 1. Mappeoppsett fellesområder.
 * * *
+
 | | Grupper ||||||
 | :-----: | :-----: | :----: | :-----: | :-----: | :-----: | :-----: | :----: |
 | | | **Administrasjon** | **Ham-Kam** | **Lager** | **Snekker** | **Støtteapparat** |
@@ -26,7 +27,6 @@
 | | **Snekker** | READ | - | READ | WRITE | - |
 | | **Støtteapparat** | READ | READ | - | - | WRITE |
 | | **Felles** | WRITE | READ | READ | READ | WRITE |
-
 
 
 Gruppene er satt slik at man får en fellesgruppe der alle er medlem. I dette tilfelle er gruppen `HamarFotballGulvAS`. Videre har jeg navngitt gruppene slik de er lette å forstå. Jeg har lagt opp slik at alle avdelingen har en `navnestandard` for grupper. Jeg har også satt gruppenavn så READ er de som trenger lesetilgang, mens WRITE har skrivetilgang. Det vil si at navnestandarden blir `G_READ_HamKam` der G står for gruppe, READ for lesetilganger og `HamKam` for avdelingen. Ved at man legger det opp sånn er det lett å bare legge til brukerne i de tilgangene de skal ha. 
