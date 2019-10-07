@@ -1,11 +1,21 @@
 
 
-# [LarsenJR](https://larsenjr.no)
-Diverse oppgaver (og guider) gjennom Fagskolen Innlandet
+# [Tilbake](https://larsenjr.no)
 
-Hvis du har lyst til å være stalker og kopiere csgo-settings, feel free <br>
-# CS:GO
-- [Autoexec.cfg](https://larsenjr.github.io/csgosettings)
-- [Botdm.cfg](https://larsenjr.github.io/botdm)
-- [Practice.cfg](https://larsenjr.github.io/practice)
-- [Config.cfg](https://larsenjr.github.io/config)
+<br>
+
+## Oppgaver
+
+- [OSI Modellen](https://larsenjr.github.io/fsi2/OsiModellen)
+- [AD Hierarki Del 1](https://larsenjr.github.io/fsi2/ADhierarkiDel1)
+- [AD Hierarki Del 2](https://larsenjr.github.io/fsi2/ADhierarkiDel2)
+- [Arbeidskrav II](https://larsenjr.github.io/fsi2/arbeidskravII)
+- 
+
+<br>
+## Gammelt
+
+- [C# Prosjekter](https://larsenjr.github.io/csharp)
+- [MYSQL Prøve](https://larsenjr.github.io/SQLprøve)
+- [MySQLGuide](https://larsenjr.github.io/MySQLGuide)
+- [Arduino Innlevering](https://larsenjr.github.io/arduino)
