@@ -4,6 +4,8 @@
 
 <br>
 
+- [Transact SQL (MS SQL)](https://github.com/larsenjr/MSSQL)
+
 ## Oppgaver
 
 ### Serverdrift
@@ -18,7 +20,7 @@
 
 ## Gammelt
 
-- [C# Prosjekter](https://larsenjr.github.io/csharp)
+- [C# Prosjekter](https://github.com/larsenjr/csharp)
 - [MYSQL Prøve](https://larsenjr.github.io/SQLprøve)
 - [MySQLGuide](https://larsenjr.github.io/MySQLGuide)
 - [Arduino Innlevering](https://larsenjr.github.io/arduino)
