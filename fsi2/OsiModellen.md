@@ -2,7 +2,7 @@
 
 [Dag 5 OSI-modellen Kap 1 Del 2.pdf](:/d5939db7daee4e7db6eddbadf34e4d34)
 
-  ![](:/13b37dbd766dbb59e697e51c8736abc4)
+  ![](https://image.larsenjr.no/2019-10-07_OwFMyt.png)
 ## Lag 4
 Connection oriented
 
