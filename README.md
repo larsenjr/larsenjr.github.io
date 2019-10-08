@@ -3,9 +3,13 @@
 
 <br>
 
-- [Transact SQL (MS SQL)](https://github.com/larsenjr/MSSQL)
+
+- [Canvas](https://finn.instructure.com)
+
 
 ## Oppgaver
+
+- [Transact SQL (MS SQL)](https://github.com/larsenjr/MSSQL)
 
 ### Serverdrift
 - [AD Hierarki Del 1](https://larsenjr.github.io/fsi2/ADhierarkiDel1)
