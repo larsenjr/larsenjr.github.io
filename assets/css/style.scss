@@ -9,12 +9,15 @@ html, body {
 
 
 .full-bg-image {
-	background-image: url("/img/sky.jpeg");
+
 	min-height: 380px;
+}
+.bg {
+	background-image: url("/img/sky.jpeg");
+	height: 100%;
 	background-position: center;
-  	background-repeat: no-repeat;
-	  background-size: cover;
-	  position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .container {
 	position: absolute;
