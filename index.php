@@ -3,7 +3,7 @@
 <body>
 <?php include('header.php'); ?>
 content
-<? include(sidebar.php'); ?>
-<? include(footer.php'); ?>
+<? include('sidebar.php'); ?>
+<? include('footer.php'); ?>
 </body>
 </html>
