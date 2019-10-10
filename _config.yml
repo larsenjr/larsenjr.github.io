@@ -1,2 +1,5 @@
 theme: jekyll-theme-cayman
 title: LarsenJR
+markdown: kramdown
+kramdown:
+   auto_ids: true
