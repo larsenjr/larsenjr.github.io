@@ -40,7 +40,7 @@ html, body {
 }
 
 .header a:hover {
-	background-color: azure;
+	background-color: grey;
 	color: black;
 }
 
@@ -74,13 +74,13 @@ html, body {
 .navbar {
 	top: 0;
 	width: 100%;
-	background-color: grey;
+	background-color: white;
 	overflow: auto;
 }
 
 /* Navigation Links */
 .navbar a {
-	float: left;
+	float: center;
 	padding: 12px;
 	color: black;
 	text-decoration: none;
