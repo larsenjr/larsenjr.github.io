@@ -1,16 +1,8 @@
----
----
-
-@import "minima";
-$content-width: 100%;
-.main-content {
-    max-width: -webkit-calc(#{$content-width});
-    max-width: calc(#{$content-width});
-}
 /* Layout */
 
-* {
+html {
 	box-sizing: border-box;
+	background-color: #f3f3f3;
 }
 
 /* Header */
@@ -73,7 +65,7 @@ $content-width: 100%;
 .navbar {
 	top: 0;
 	width: 100%;
-	background-color: beige;
+	background-color: grey;
 	overflow: auto;
 }
 
