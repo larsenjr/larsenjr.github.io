@@ -2,7 +2,7 @@
 <head></head>
 <body>
 {% include header.html %}
-content
+
 {% include sidebar.html %}
 {% include footer.html %}
 </body>
