@@ -1,0 +1,24 @@
+/* Layout */
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: Alef, Roboto, sans-serif;
+  font-size: 
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
