@@ -25,3 +25,13 @@
 - [MySQL Prøve](https://larsenjr.github.io/fsi2/SQLprøve)
 - [MySQLGuide](https://larsenjr.github.io/fsi2/MySQLGuide)
 - [Arduino Innlevering](https://larsenjr.github.io/fsi2/arduino)
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
