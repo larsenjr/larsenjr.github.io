@@ -1,8 +1,4 @@
 
----
-layout: index
----
-
 # [Tilbake](https://larsenjr.no)
 
 <br>
