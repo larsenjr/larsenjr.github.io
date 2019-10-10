@@ -5,6 +5,13 @@ html {
 	background-color: #f3f3f3;
 }
 
+#header-full {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #f3f3f3;
+}
 /* Header */
 .header {
 	padding: 60px;
@@ -38,7 +45,7 @@ html {
 .content {
 	max-width: 960px;
 	margin: auto;
-	background-color:yellow;
+	background-color:#f3f3f3;
 }
 
 .main {
@@ -75,7 +82,7 @@ html {
 	padding: 12px;
 	color: black;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 16px;
 	width: 25%;
 	text-align: center;
 }

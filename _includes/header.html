@@ -1,8 +1,8 @@
 <body>
     <div class="content">
-        <section class="header">
-                <div class="navbar" id="NavBar">
-                    <a class="active" href="#"><i class="fas fa-home"> </i>Home</a>
+        <section class="header-full">
+                <div class="navbar-brand-js-scroll-trigger" href ="#pageTop#" id="NavBar">
+                    <a class="active" href=""><i class="fas fa-home"> </i>Home</a>
                     <a href="#ServerDrift"><i class="fas fa-server"></i> Serverdrift</a>
                     <a href="#Nettverk"><i class="fas fa-wifi"></i>Nettverk</a>
                     <a href="#Gammelt"><i class="fas fa-folder"></i>Gammelt</a>
@@ -17,7 +17,7 @@
 
 <script> 
 function myFunction() {
-    var x = "document.getElementById("Navbar");
+    var x = "document.getElementById("navbar");
     if (x.className === "navbar"){
         x.className += "responsive";
     }
