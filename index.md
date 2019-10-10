@@ -21,8 +21,7 @@
 
 ## Gammelt
 
-- [C# Prosjekter](https://github.com/larsenjr/csharp)
-- [MySQL Prøve](https://larsenjr.github.io/SQLprøve)
-- [MySQLGuide](https://larsenjr.github.io/MySQLGuide)
-- [Arduino Innlevering](https://larsenjr.github.io/arduino) 
-
+- [C# Prosjekter](https://github.com/larsenjr/fsi2/csharp)
+- [MySQL Prøve](https://larsenjr.github.io/fsi2/SQLprøve)
+- [MySQLGuide](https://larsenjr.github.io/fsi2/MySQLGuide)
+- [Arduino Innlevering](https://larsenjr.github.io/fsi2/arduino)
