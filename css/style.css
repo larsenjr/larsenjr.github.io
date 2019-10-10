@@ -1,77 +1,80 @@
 /* Layout */
 
 * {
-    box-sizing: border-box;
-  }
+		box-sizing: border-box;
+	}
 
-body {
-  font-family: Alef, Roboto, sans-serif;
-  font-size: 16px;
-  background-color: #ffffff;
+	
+.header {
+	padding: 60px;
+	text-align: center;
+	background: #1abc9c;
+	color: white;
+	font-size: 30px;
 }
 
-.header {
-  background-color: #337acc;
-  color: #ffffff;
-  padding: 15px;
+.content {
+	max-width: 960px;
+	margin:auto;
+}
+.column{
+	float: left;
+	width:50%;
+	flex:50%;
+}
+.row{
+	display: flex;
+}
+
+.row:after {
+	content:"";
+	display: table;
+	clear: both;
+}
+/* Navbar style */
+.navbar {
+	width: 100%;
+	background-color: beige;
+	overflow:auto;
+}
+
+/* Navigation Links */
+.navbar a {
+	float: left;
+	padding: 12px;
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	width: 25%;
+	text-align: center;
+}
+
+/* Hover background */
+.navbar a:hover {
+	background-color: grey;
+}
+.navbar a:active {
+	background-color: forestgreen;
+}
+
+@media screen and (max-width:500px) {
+	.navbar a {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+body {
+	font-family: Alef, Roboto, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: #ffffff;
 }
 
 .footer {
-  background-color: #ffffff;
-  color: #ffffff;
-  text-align: center;
-  font-size: 142px;
-  padding: 15px;
-}
-
-/* Iverlay for Navbar*/
-.overlay{
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0, 0.9); 
-  overflow-x: hidden; 
-  transition: 0.5s; 
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%; 
-  width: 100%; 
-  text-align: center; 
-  margin-top: 30px; 
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block; 
-  transition: 0.3s; 
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-/* Media */
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+	background-color: #ffffff;
+	color: #ffffff;
+	text-align: center;
+	font-size: 142px;
+	padding: 15px;
 }
