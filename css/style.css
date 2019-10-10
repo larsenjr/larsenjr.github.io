@@ -1,8 +1,10 @@
 /* Layout */
 
-html {
+html, body {
+	height: 100%;
 	box-sizing: border-box;
 	background-color: #f3f3f3;
+	font-family: Alef, Roboto, Arial, Helvetica, sans-serif;
 }
 
 #header-full {
@@ -126,12 +128,6 @@ html {
 		display: block;
 		text-align:left;
 	}
-}
-
-body {
-	font-family: Alef, Roboto, Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	background-color: #ffffff;
 }
 
 .footer {

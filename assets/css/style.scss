@@ -1,11 +1,14 @@
 /* Layout */
 
-html {
+html, body {
+	height: 100%;
 	box-sizing: border-box;
 	background-color: #f3f3f3;
+	font-family: Alef, Roboto, Arial, Helvetica, sans-serif;
+	font-size: 16px;
 }
 
-#header-full {
+#NavBar {
 	position: absolute;
 	width: 100%;
 	top: 0;
@@ -129,7 +132,6 @@ html {
 }
 
 body {
-	font-family: Alef, Roboto, Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	background-color: #ffffff;
 }
