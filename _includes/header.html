@@ -1,12 +1,12 @@
 <body>
     <div class="content">
         <section class="header">
-            <div id="NavBar">
-                <div class="navbar">
+                <div class="navbar" id="NavBar">
                     <a class="active" href="#"><i class="fas fa-home"> </i>Home</a>
                     <a href="#ServerDrift"><i class="fas fa-server"></i> Serverdrift</a>
                     <a href="#Nettverk"><i class="fas fa-wifi"></i>Nettverkskommunikasjon</a>
                     <a href="#Gammelt"><i class="fas fa-folder"></i>Gammelt</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
                 </div>
             </div>
         </section>
@@ -14,3 +14,15 @@
         <div class="main"
     </div>
 </body>
+
+<script> 
+function myFunction() {
+    var x = "document.getElementById("navbar");
+    if (x.className === "navbar"){
+        x.className += "responsive";
+    }
+    else {
+        x.className ="navbar";
+    }
+}
+</script>

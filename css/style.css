@@ -1,9 +1,10 @@
 /* Layout */
 
 * {
-		box-sizing: border-box;
-	}
-	
+	box-sizing: border-box;
+}
+
+/* Header */
 .header {
 	padding: 60px;
 	text-align: center;
@@ -11,51 +12,60 @@
 	color: white;
 	font-size: 30px;
 }
+
 .header a {
 	float: left;
 	color: black;
 	text-align: center;
 	padding: 12px;
-	text-decoration:none;
+	text-decoration: none;
 	font-size: 18px;
 	line-height: 25px;
 	border-radius: 4px;
 }
+
 .header a:logo {
 	font-size: 25px;
 	font-weight: bold;
 }
+
 .header a:hover {
 	background-color: azure;
-	color:black;
+	color: black;
 }
+
 .content {
 	max-width: 960px;
-	margin:auto;
+	margin: auto;
+	background-color:yellow;
 }
+
 .main {
 	margin-bottom: 30px;
 }
-.column{
+
+.column {
 	float: left;
-	width:50%;
-	flex:50%;
+	width: 50%;
+	flex: 50%;
 }
-.row{
+
+.row {
 	display: flex;
 }
 
 .row:after {
-	content:"";
+	content: "";
 	display: table;
 	clear: both;
 }
-/* Navbar style */
+
+/* Navbar  */
 .navbar {
 	top: 0;
 	width: 100%;
 	background-color: beige;
-	overflow:auto;
+	overflow: auto;
 }
 
 /* Navigation Links */
@@ -71,20 +81,45 @@
 
 /* Hover background */
 .navbar a:hover {
-	background-color: grey;
-}
-.navbar a:active {
-	background-color: forestgreen;
+	background-color: #ddd;
 }
 
-@media screen and (max-width:500px) {
-	.navbar a {
+.navbar a:active {
+	background-color: #ddd;
+}
+
+.navbar a.icon {
+	display: none;
+}
+/* Responsive design for web */
+@media screen and (max-width:600px) {
+	/* Columns */
+	.navbar a,
+	.navbar a:not(:first-child) {
+		display: none;
+	}
+
+	.navbar a.icon {
 		float: none;
 		display: block;
 		width: 100%;
 		text-align: center;
 	}
 }
+@media screen and (max-width: 600px) {
+	.navbar.responsive {position: relative;}
+	.navbar.responsive a:icon {
+		position: absolute;
+		right:0;
+		top: 0;
+	}
+	.navbar.responsive a{
+		float: none;
+		display: block;
+		text-align:left;
+	}
+}
+
 body {
 	font-family: Alef, Roboto, Arial, Helvetica, sans-serif;
 	font-size: 16px;
