@@ -41,13 +41,14 @@
   <body>
 
 
-    <header class="page-header" role="banner">
+    <header class="page-header" role="banner" class="responsive">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 
     </header>
 
     <main id="content" class="main-content" role="main">
+      <h2 class="w3-wide"> Trykk på de respektive fanene for å komme til oppgaver</h2>
       {{ content }}
       <div class="row">
         <div class="column" onclick="OpenTab('Serverdrift');"style="background:grey;"> Serverdrift</div>
