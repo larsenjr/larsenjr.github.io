@@ -14,20 +14,9 @@ html, head, body {
     scroll-behavior:smooth;
 }
 
-div.image {
-    background-image:url("https://image.larsenjr.no/2019-10-10_SWJKVT.png");
-    min-height: 380px;
-    height:100%;
-    background-position: center;
-	background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: auto;
-
-}
-
 .page-header {
     background-image:url("https://image.larsenjr.no/2019-10-10_SWJKVT.png");
-    height:50%;
+    height:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,8 +95,8 @@ div.image {
     padding: 16px;
 	margin:auto;
     width: 100%;
-    position: left;
-    text-align: left;
+    position: center;
+    text-align: center;
 }
 
 .content {
