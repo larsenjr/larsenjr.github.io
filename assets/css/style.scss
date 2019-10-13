@@ -157,7 +157,7 @@ p {
 
 .row:after {
 	content: "";
-	display:flex;
+	display:table;
 	clear: both;
 }
 
