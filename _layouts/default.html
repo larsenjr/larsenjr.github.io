@@ -46,21 +46,21 @@
 <body>
 
   <header class="page-header" role="banner" class="responsive">
-    <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+    <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }} Portfolio</h1>
     <h2 class="project-tagline">
       {{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 
   </header>
 
-  <main id="content" class="main-content" role="main">
-    <h2 class="w3-wide"> Trykk på de respektive fanene for å komme til oppgaver</h2>
+  <main id="content" class="main-content" role="main" class="responsive">
+    <h2 class="column"> Trykk på de respektive fanene for å komme til oppgaver</h2>
     {{ content }}
     <div class="row">
       <div class="column" onclick="openTab('Serverdrift');" style="background:grey;"> Serverdrift</div>
       <div class="column" onclick="openTab('Nettverk');" style="background:grey;"> Nettverk</div>
       <div class="column" onclick="openTab('Gammelt');" style="background:grey;"> Gammelt</div>
     </div>
-    <div id="Serverdrift" class="containerTab" style="display:none; background:black;">
+    <div id="Serverdrift" class="containerTab" style="display:none; background:white;">
       <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
       <h2> Serverdrift</h2>
       <ul>
@@ -72,7 +72,7 @@
         </li>
       </ul>
     </div>
-    <div id="Nettverk" class="containerTab" style="display:none; background:black;">
+    <div id="Nettverk" class="containerTab" style="display:none; background:white;">
       <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
       <h2> Nettverkskommunikasjon</h2>
       <ul>
@@ -84,7 +84,7 @@
         </li>
       </ul>
     </div>
-    <div id="Gammelt" class="containerTab" style="display:none; background:black;">
+    <div id="Gammelt" class="containerTab" style="display:none; background:white;">
       <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
       <h2> Gammelt</h2>
       <ul>
