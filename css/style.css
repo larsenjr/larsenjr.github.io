@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
   }
-html, body {
+html, head, body {
 	height: 100%;
 	background-color: #f3f3f3;
     font-family: 'Alef', 'Roboto', sans-serif;
