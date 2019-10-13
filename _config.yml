@@ -1,5 +1,5 @@
 # jekyll config
-theme: minima
+theme: jekyll-theme-cayman
 title: LarsenJR
 markdown: kramdown
 kramdown:
