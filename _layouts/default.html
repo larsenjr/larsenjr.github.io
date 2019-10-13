@@ -1,129 +1,137 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
 
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
-    <meta charset="UTF-8">
+<head>
 
-{% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalability=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#FFCB8B">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    <!-- FavIcon-->
-    <link rel="icon" href="https://img.icons8.com/small/16/000000/share-2.png">
-    <!-- Favicon End-->
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {% endif %}
+  <meta charset="UTF-8">
 
-    <!-- Icon Library-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- Icon Library End-->
+  {% seo %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalability=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#FFCB8B">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
-    <!-- Custom Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Alef|Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- FavIcon-->
+  <link rel="icon" href="https://img.icons8.com/small/16/000000/share-2.png">
+  <!-- Favicon End-->
 
-      <!-- Custom Javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/javascript.js"> </script>
-  </head>
-  <body>
+  <!-- Icon Library-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- Icon Library End-->
 
+  <!-- Custom Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Alef|Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    <header class="page-header" role="banner" class="responsive">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+  <!-- Custom Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/javascript.js"> </script>
+</head>
 
-    </header>
+<body>
 
-    <main id="content" class="main-content" role="main">
-      <h2 class="w3-wide"> Trykk på de respektive fanene for å komme til oppgaver</h2>
-      {{ content }}
-      <div class="row">
-        <div class="column" onclick="OpenTab('Serverdrift');"style="background:grey;"> Serverdrift</div>
-        <div class="column" onclick="OpenTab('Nettverk');"style="background:grey;"> Nettverk</div>
-        <div class="column" onclick="OpenTab('Gammelt');"style="background:grey;"> Gammelt</div>
+  <header class="page-header" role="banner" class="responsive">
+    <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+    <h2 class="project-tagline">
+      {{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+
+  </header>
+
+  <main id="content" class="main-content" role="main">
+    <h2 class="w3-wide"> Trykk på de respektive fanene for å komme til oppgaver</h2>
+    {{ content }}
+    <div class="row">
+      <div class="column" onclick="openTab('Serverdrift');" style="background:grey;"> Serverdrift</div>
+      <div class="column" onclick="openTab('Nettverk');" style="background:grey;"> Nettverk</div>
+      <div class="column" onclick="openTab('Gammelt');" style="background:grey;"> Gammelt</div>
     </div>
     <div id="Serverdrift" class="containerTab" style="display:none; background:black;">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-            <h2> Serverdrift</h2>
-            <ul>
-                <li>
-                    <a href="fsi.larsenjr.no/fsi2/ADhierarkiDel1">AdHierarkiDel1</a> <br>
-                </li>
-                <li>
-                <a href="fsi.larsenjr.no/fsi2/ADhierarkiDel2">AdHierarkiDel2</a><br>
-                </li>
-            </ul>
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <h2> Serverdrift</h2>
+      <ul>
+        <li>
+          <a href="/fsi2/ADhierarkiDel1">AdHierarkiDel1</a> <br>
+        </li>
+        <li>
+          <a href="/fsi2/ADhierarkiDel2">AdHierarkiDel2</a><br>
+        </li>
+      </ul>
     </div>
     <div id="Nettverk" class="containerTab" style="display:none; background:black;">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <h2> Nettverkskommunikasjon</h2>
-                    <ul>
-                <li>
-                    <a href="fsi.larsenjr.no/fsi2/arbeidskravII">Arbeidskrav II </a> <br>
-                </li>
-                <li>
-                    <a href="fsi.larsenjr.no/fsi2/OsiModellen">OSI modellen</a><br>
-                </li>
-            </ul>
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <h2> Nettverkskommunikasjon</h2>
+      <ul>
+        <li>
+          <a href="/fsi2/arbeidskravII">Arbeidskrav II </a> <br>
+        </li>
+        <li>
+          <a href="/fsi2/OsiModellen">OSI modellen</a><br>
+        </li>
+      </ul>
     </div>
     <div id="Gammelt" class="containerTab" style="display:none; background:black;">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-            <h2> Gammelt</h2>
-            <ul>
-                <li>
-                    <a href="fsi.larsenjr.no/fsi2/MySQLGuide">MySQL Visual Studio Guide </a> <br>
-                </li>
-                <li>
-                    <a href="fsi.larsenjr.no/fsi2/arduino">Arduino Oppgave</a><br>
-                </li>
-            </ul>
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <h2> Gammelt</h2>
+      <ul>
+        <li>
+          <a href="/fsi2/MySQLGuide">MySQL Visual Studio Guide </a> <br>
+        </li>
+        <li>
+          <a href="/fsi2/arduino">Arduino Oppgave</a><br>
+        </li>
+      </ul>
     </div>
-   </section>
-
-   <section id="social-media" style="max-width: 960px">
-    <div class="social-media">
+    <section id="social-media" style="max-width: 960px">
+      <div class="social-media">
         <a href="https://www.facebook.com/StianLarse">
-         <i class="fab fa-facebook"></i></a>
-            <a href="https://www.twitter.com/slarzern">
-         <i class="fab fa-twitter"></i></a>
-              <a href="https://www.linkedin.com/in/stian-larsen0904">
-        <i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/larsenjr">
-        <i class="fab fa-github"></i></a>
-    </div>      
-  
-</section>
+          <i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com/slarzern">
+          <i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/stian-larsen0904">
+          <i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/larsenjr">
+          <i class="fab fa-github"></i></a>
+      </div>
 
-      <footer class="site-footer" id="footer">
-        {% if site.github.is_project_page %}
-        
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
-        <span class="site-footer-credits"> <p class="footer"> Copyhehe LarsenJR 2019</p> </span>
-      </footer>
-    </main>
-  </body>
+    </section>
+
+    <footer class="site-footer" id="footer">
+      {% if site.github.is_project_page %}
+
+      <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a>
+        is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+      {% endif %}
+      <span class="site-footer-credits">
+        <p class="footer"> Copyhehe LarsenJR 2019</p>
+      </span>
+    </footer>
+  </main>
+
+</body>
+
 </html>
 <script>
-function openTab(Serverdrift) {
-  var i, x;
-  x = document.getElementsByClassName("containerTab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  function openTab(Serverdrift) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById().style.display = "block";
   }
-  document.getElementById(Serverdrift).style.display = "block";
-}
 </script>
