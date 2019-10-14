@@ -4,16 +4,15 @@
 <head>
 
   {% if site.google_analytics %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142297782-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', '{{ site.google_analytics }}');
-  </script>
+  gtag('config', 'UA-142297782-1');
+</script>
+
   {% endif %}
   <meta charset="UTF-8">
 
