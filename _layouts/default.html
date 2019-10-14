@@ -51,15 +51,16 @@
       {{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 
   </header>
-  {{ content }}
+
   <main id="content" class="main-content" role="main" class="responsive">
     <h2 class="container"> Trykk på de respektive fanene for å komme til oppgaver</h2>
- 
+  
     <div class="row">
       <div class="column" onclick="openTab('Serverdrift');" style="background:grey;"> Serverdrift</div>
       <div class="column" onclick="openTab('Nettverk');" style="background:grey;"> Nettverk</div>
       <div class="column" onclick="openTab('Gammelt');" style="background:grey;"> Gammelt</div>
     </div>
+    {{ content }}
     <div id="Serverdrift" class="containerTab" style="display:none; background:white;">
       <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
       <h2> Serverdrift</h2>
