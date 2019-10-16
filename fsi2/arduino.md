@@ -124,14 +124,14 @@ void loop() {
   unsigned long currentMillis = millis();
 
 
-// Denne IF-setningen eller sekvensen sjekker om lightState er 0 og oppdaterer den til 1. Den sjekker også om sekvensen har en intervall.   
+// Denne IF-setningen eller sekvensen sjekker om lightState er 0 og oppdaterer den til 1. Den sjekker også om sekvensen har en intervall.
   if ((currentMillis - LastMillis >= YelInt) && (lightState == 0))
   {
       Serial.println("Rødt lys");
       lightState = 1;
       digitalWrite(LEDred, HIGH);
       digitalWrite(LEDyel, LOW);
-    
+
     // Oppdaterer forrige millis med denne slik at denne blir den nye "millis". LastMillis vil da være 1 etter denne sekvensen.
     LastMillis = currentMillis;
   }
@@ -142,7 +142,7 @@ void loop() {
       digitalWrite(LEDred, HIGH);
       digitalWrite(LEDyel, HIGH);
 
-    // Oppdaterer forrige millis med denne slik at denne blir den nye "millis". LastMillis vil da være 2 etter denne sekvensen. 
+    // Oppdaterer forrige millis med denne slik at denne blir den nye "millis". LastMillis vil da være 2 etter denne sekvensen.
       LastMillis = currentMillis;
   }
   if ((currentMillis - LastMillis >= RedYelInt) && (lightState == 2))
