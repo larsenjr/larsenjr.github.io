@@ -52,6 +52,12 @@
         <a href="{{ https://www.larsenjr.no }}" class="btn">Tilbake</a>
         {% endif %}
 
+      {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+      {% endif %}
+      {% if site.show_downloads %}
+        <a href="https://finn.instructure.com/" class="btn">Canvas</a>
+      {% endif %}
   </header>
 
   <main id="content" class="main-content" role="main" class="responsive">
@@ -62,7 +68,7 @@
       <div class="column" onclick="openTab('Nettverk');" style="background:grey;"> Nettverk</div>
       <div class="column" onclick="openTab('Gammelt');" style="background:grey;"> Gammelt</div>
     </div>
-    {{ content }}
+    
     <div id="Serverdrift" class="containerTab" style="display:none; background:white;">
       <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
       <h2> Serverdrift</h2>
@@ -85,6 +91,9 @@
         <li>
           <a href="/fsi2/OsiModellen">OSI modellen</a><br>
         </li>
+        <li>
+          <a href="/fsi2/ConfigVPNIPSEC">Site to Site VPN IPSEC Config </a><br>
+        </li>
       </ul>
     </div>
     <div id="Gammelt" class="containerTab" style="display:none; background:white;">
@@ -99,6 +108,7 @@
         </li>
       </ul>
     </div>
+    {{ content }}
     <section id="social-media" style="max-width: 960px">
       <div class="social-media">
         <a href="https://www.facebook.com/StianLarse">
@@ -120,7 +130,7 @@
         is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
       {% endif %}
       <span class="site-footer-credits">
-        <p class="footer"> Copyhehe LarsenJR 2019</p>
+        <p class="footer"> Copyright LarsenJR 2019</p>
       </span>
     </footer>
     <script>
@@ -133,6 +143,7 @@
         document.getElementById(tabName).style.display = "block";
       }
     </script>
+  
   </main>
 
   </body>
