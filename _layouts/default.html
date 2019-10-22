@@ -50,14 +50,8 @@
       {{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.show_downloads %}
         <a href="{{ https://www.larsenjr.no }}" class="btn">Tilbake</a>
+        <a href="{{ https://finn.instructure.com/ }}" class="btn">Canvas</a>
         {% endif %}
-
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="https://finn.instructure.com/" class="btn">Canvas</a>
-      {% endif %}
   </header>
 
   <main id="content" class="main-content" role="main" class="responsive">
