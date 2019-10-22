@@ -45,13 +45,17 @@
 <body>
 
   <header class="page-header" role="banner" class="responsive">
-    <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }} Portfolio</h1>
+    <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}
+      {% if page.url == '/' %}
+        Portfolio
+      {% endif %}
+    </h1>
     <h2 class="project-tagline">
       {{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.show_downloads %}
         <a href="{{ https://www.larsenjr.no }}" class="btn">Tilbake</a>
         <a href="{{ https://finn.instructure.com/ }}" class="btn">Canvas</a>
-        {% endif %}
+      {% endif %}
   </header>
 
   <main id="content" class="main-content" role="main" class="responsive">

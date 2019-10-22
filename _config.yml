@@ -4,3 +4,4 @@ title: LarsenJR
 markdown: kramdown
 kramdown:
    auto_ids: true
+show_downloads: true
