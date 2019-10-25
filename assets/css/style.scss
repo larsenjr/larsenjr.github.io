@@ -69,13 +69,14 @@ html, head, body {
   }
 
 .main {
+    max-width: 100rem;
     width: 100%;
     text-align: center;
     position:center;
 }
 .container {
     padding: 16px;
-	margin:auto;
+	  margin:auto;
     width: 100%;
     position: center;
     text-align: center;

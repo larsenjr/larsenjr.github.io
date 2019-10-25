@@ -1,4 +1,5 @@
 # Oppgave GPO og Powershell
+
 - [Oppgave GPO og Powershell](#oppgave-gpo-og-powershell)
   - [GPO](#gpo)
     - [Oppgave 1. GPO – hvilke måter kan vi bestemmer hvem de skal gjelde for og hva er forskjellen? (WMI-filtering, ILT og security-filtering)](#oppgave-1-gpo-%e2%80%93-hvilke-m%c3%a5ter-kan-vi-bestemmer-hvem-de-skal-gjelde-for-og-hva-er-forskjellen-wmi-filtering-ilt-og-security-filtering)
@@ -14,17 +15,21 @@
 
 Når man spesifiserer GPO kan man spesifisere grupper eller brukere for å implementere Security Filtering. Du kan bestemme "target" som for eksempel operativsystem, prosessor eller installerte programmer. Gjennom WMI filter og på Item-Level Targeting kan man spesifisere innstillinger på GPO-er.
 
-Windows Management Instrumentation (WMI) brukes til å "applye" GOP basert på settings til "target computer". WMI baserer seg blant annet på modell, operativsystem og tidssone. Ulempen med WMI er at det er ressurskrevende hvis man setter mange regler.
+**WMI-Filtering**
+
+Windows Management Instrumentation (WMI) brukes til å "applye" GOP basert på settings til "target computer". WMI baserer seg blant annet på modell, operativsystem og tidssone. Ulempen med WMI er at det er ressurskrevende hvis man setter mange regler. Derfor burde man begrense WMI-filtering til færrest mulige GPO-er. Det fungerer bare når spørringen din gir et resultat.
 
 Eksempel WMI filter:
 
 `Select * from Win32_OperatingSystem WHERE Version LIKE "10.%"`
 
-Item-level Targeting(ILT)
+**Item-level Targeting(ILT)**
 
- Med Item-Level Targeting får man bedre kontroll over programmene som brukes med spesifiserte innstillinger. 
+Med Item-Level Targeting får man bedre kontroll over programmene som brukes med spesifiserte innstillinger. Ved at man defierer hvilke grupper eller programmer som hver bruker skal ha kan man styre tilgangen bedre. Item level targeting gjelder bare for enkeltregler. Du kan bruke Item-Level targeting til mye, men det brukes mest når man skal delegere avdelinger eller grupper for å styre hvilke nettverkstasjoner de skal ha. Item-level targeting er ikke like ytelseskrevende som GPO-filtrering.
 
-Secuirity filtering er brukt for å "applye" policy settings til bare en del av brukerne og maskinene. Som standard kan alle authenticated users få policy settings.
+**Security filtering**
+
+Secuirity filtering er brukt for å "applye" policy settings til bare en del av brukerne og maskinene. Som standard kan alle authenticated users få policy settings.Filtreringen gjelder for hele GPO-en og er gyldig for selve objektet. De som skal ha tilgang trenger lesetilgang til GPO. Det er ytelseskrevende og tar lang tid å prosessere når du benytter security filtering.
 
 ### Oppgave 2. Hvordan ser man GPO-er som er i bruk?
 
@@ -34,16 +39,15 @@ Skriv `rsop.msc`
 
 ![Rsop.msc](https://image.larsenjr.no/2019-10-17_lHE8dV.png)
 
-
 ![](https://image.larsenjr.no/2019-10-17_8ggV96.png)
 
-CMD:
+**CMD:**
 
-`gpresult /Scope User /v` for å sjekke policyes på brukeren 
+`gpresult /Scope User /v` for å sjekke policyes på brukeren
 
 Scroll til `Resultant Set of Policies for user` for å se hvilken `GPO`-er som er i bruk.
 
-![Resultant Set of Policies for user](https://image.larsenjr.no/2019-10-17_eonLti.png)
+![Resultant Set of Policies for user](https://image.larsenjr.no/2019-10-25_Jcjwon.png)
 
 eller hvis du skal ha policies på klienten bruker du:
 
@@ -57,29 +61,30 @@ Skriv:
 
 Først må man laste ned en MSI ifra Google for å bruke denne igjennom GPO. Den finnes [her](https://cloud.google.com/chrome-enterprise/browser/download/)
 
-![](https://image.larsenjr.no/2019-10-22_QRDG1w.png)
+![Chrome](https://image.larsenjr.no/2019-10-22_QRDG1w.png)
 
 Lag ny policy:
-[](https://image.larsenjr.no/2019-10-22_U7Ft5i.png)
+[NewPolicy](https://image.larsenjr.no/2019-10-22_U7Ft5i.png)
 
 Gå til:
 `User Configuration -> Polices -> Software Settings -> Software Installation`
-
 
 Legg til MSI filen og trykk "assigned". Når du har godtatt, gå inn på `properties` og trykk `install application on logon`:
 
 ![ApplyLogon](https://image.larsenjr.no/2019-10-22_UMB0Ki.png)
 
-
-Når brukeren logger på neste gang vil det installeres Google Chrome før brukeren kommer inn i desktop. 
+Når brukeren logger på neste gang vil det installeres Google Chrome før brukeren kommer inn i desktop.
 
 **a. Det er ikke mulig å bruke Item-Level Targeting på Software-Installation policier. Hvordan kunne vi styrt at kun maskiner med Windows 10 fikk installert Chrome? (uten bruk av bare security-filtering)**
 
 Man kan bruke WMI filter som filtrerer på windows 10.
 
 Kommandoen er som følger:
+
 ```sql
+
 select * from Win32_OperatingSystem where Version like "10.%"
+
 ```
 
 **b. Er det noen alternativer til å bruke GPO for å installere programmer på klientene?**
@@ -94,34 +99,31 @@ Hvis ikke kan man bruke `Ninite Pro` der man deployer til alle klienter.
 
 Man kan enten ta å disable hele brukeren slik at man ikke får tilgang når han logger ut. Du kan også legge til `Software Restriction Policies` som gjør at hvis brukeren har virus at den fjerner tilgangen til å kjøre `.exe` filer og at den kan skrive til forskjellige mapper. Mappene som bør fjernes av `SRP` er `%appdata%`, shares som er på serveren og `%temp%`.
 
-
 ![](https://image.larsenjr.no/2019-10-24_dbG3BA.png)
-
 
 ### Oppgave 5. Hvordan kan man se alle shares på serveren (hidden eller ikke) fra klient-maskinen? Vis med screenshot
 
 Mappa er sharet, men er hidden.
 
-[](https://image.larsenjr.no/2019-10-22_Kkjvxu.png)
-
+![HiddenProperties](https://image.larsenjr.no/2019-10-22_Kkjvxu.png)
 
 Hidden share vises ikke her.
 
-![](https://image.larsenjr.no/2019-10-22_lq59Nq.png)
+![HiddenShares](https://image.larsenjr.no/2019-10-22_lq59Nq.png)
 
 Skriv: `net view /all \\172.16.15.5` i CMD
 
-172.16.15.5 er IPen til serveren.
+`172.16.15.5` er IPen til serveren.
 
 ![NetView](https://image.larsenjr.no/2019-10-22_rPDmsM.png)
 
-Alle shares kommer opp, de som er hidden har et `$` etter seg. 
+Alle shares kommer opp, de som er hidden har et `$` etter seg.
 
 ### Oppgave 6. Powershell:
 
 **a. Deaktiver og aktiver en bruker i AD.**
 
-**Aktivere AD-Account** 
+**Aktivere AD-Account**
 
 ```powershell
 Enable-ADAccount -Identity Stilar "CN=Stian Larsen,CN=Users,DC=dcstian,DC=local"
@@ -197,7 +199,7 @@ foreach ($User in $ADUser) {
     {
         Write-Warning "A User account with username $Username already exist!"
     }
- else 
+ else
     {
     New-ADUser -SamAccountName $Username -UserPrincipalName "$Username@hamarfotballgulvas.local" -Name "$Firstname $Lastname" -GivenName $Firstname -Surname $Lastname -Enabled $true -DisplayName "$Lastname, $Firstname" -Path $OU -Initials $Initials -Description $Description -City $city -Company $company -State $state -StreetAddress $streetaddress -OfficePhone $telephone -EmailAddress "$Username@hamarfotballgulvas.local" -Title $Jobtitle -AccountPassword (ConvertTo-SecureString $Password -AsPlainText -Force) -ChangePasswordAtLogon $true
     }
@@ -205,4 +207,6 @@ foreach ($User in $ADUser) {
 
 ```
 
-![ResultatPSImport](https://image.larsenjr.no/2019-10-22_79YvJt.png)
+[ImportAccounts.csv](https://image.larsenjr.no/2019-10-25_b2DxWZ.csv)
+
+![ResultatPSImport](https://image.larsenjr.no/2019-10-25_NETFd0.png)
