@@ -171,18 +171,21 @@ Remove-ADGroupMember -Identity Administrators -Member Stian
 
 Import-Module activedirectory
 
-# Lagrer dataen fra ADUsers.csv i $ADUsers variabelen
+# Lagrer dataen fra ADUsers.csv i $ADUser variabelen
 
 $ADUser = Import-Csv -Delimiter ";" -Path "C:\Users\Administrator\Downloads\importAccount.csv"
 
-# Kjører gjennom hver rad med brukerdetaljer i CSV fil
+<# Definerer OU som den skal lagre brukerne i. Ligger under respektiv OU 
+og under "Attribute Editor".#>
+$OU = "OU=CSV Import,OU=Stutt AS,DC=dcstian,DC=local";
+
+# Kjører gjennom hver rad med brukerdetaljer i CSV fil. De attriuttene som ikke defineres blir bare skippet #>
 
 foreach ($User in $ADUser) {
     $Username = $User.username
     $Password = $User.password
     $Firstname = $User.firstname
     $Lastname = $User.lastname
-    $OU = $User.$User.ou
     $Initials = $User.initials
     $Description = $User.description
     $Email = $User.email
@@ -198,9 +201,9 @@ foreach ($User in $ADUser) {
 # Sjekker om brukeren er lagt allerede. Hvis den er lagt, skriver den ut en "Warning" om at brukeren allerede eksisterer i "Active Directoy"
  if (Get-ADUser -F {SamAccountName -eq $Username})
     {
-        Write-Warning "A User account with username $Username already exist!"
+        Write-Warning "En bruker med brukernavn $Username ligger allerede i AD!"
     }
- else
+ else 
     {
     New-ADUser -SamAccountName $Username -UserPrincipalName "$Username@hamarfotballgulvas.local" -Name "$Firstname $Lastname" -GivenName $Firstname -Surname $Lastname -Enabled $true -DisplayName "$Lastname, $Firstname" -Path $OU -Initials $Initials -Description $Description -City $city -Company $company -State $state -StreetAddress $streetaddress -OfficePhone $telephone -EmailAddress "$Username@hamarfotballgulvas.local" -Title $Jobtitle -AccountPassword (ConvertTo-SecureString $Password -AsPlainText -Force) -ChangePasswordAtLogon $true
     }
