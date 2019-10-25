@@ -57,7 +57,6 @@ Skriv:
 
 Først må man laste ned en MSI ifra Google for å bruke denne igjennom GPO. Den finnes [her](https://cloud.google.com/chrome-enterprise/browser/download/)
 
-
 ![](https://image.larsenjr.no/2019-10-22_QRDG1w.png)
 
 Lag ny policy:
@@ -71,6 +70,8 @@ Legg til MSI filen og trykk "assigned". Når du har godtatt, gå inn på `proper
 
 ![ApplyLogon](https://image.larsenjr.no/2019-10-22_UMB0Ki.png)
 
+
+Når brukeren logger på neste gang vil det installeres Google Chrome før brukeren kommer inn i desktop. 
 
 **a. Det er ikke mulig å bruke Item-Level Targeting på Software-Installation policier. Hvordan kunne vi styrt at kun maskiner med Windows 10 fikk installert Chrome? (uten bruk av bare security-filtering)**
 
@@ -91,7 +92,11 @@ Hvis ikke kan man bruke `Ninite Pro` der man deployer til alle klienter.
 
 ### Oppgave 4. Vis hvordan man stenger ute en bruker hvis han har fått virus (eller lignende)
 
-`Software Restriction Policies`
+Man kan enten ta å disable hele brukeren slik at man ikke får tilgang når han logger ut. Du kan også legge til `Software Restriction Policies` som gjør at hvis brukeren har virus at den fjerner tilgangen til å kjøre `.exe` filer og at den kan skrive til forskjellige mapper. Mappene som bør fjernes av `SRP` er `%appdata%`, shares som er på serveren og `%temp%`.
+
+
+![](https://image.larsenjr.no/2019-10-24_dbG3BA.png)
+
 
 ### Oppgave 5. Hvordan kan man se alle shares på serveren (hidden eller ikke) fra klient-maskinen? Vis med screenshot
 
@@ -149,7 +154,6 @@ $UserAccount | Set-LocalUser -Password $Password
 
 ```powershell
 Add-ADGroupMember -Identity Users -Member Stian
-
 ```
 
 ```powershell
@@ -159,7 +163,6 @@ Remove-ADGroupMember -Identity Administrators -Member Stian
 **d. Lag en liste i excel med 5 brukere, legg inn disse i AD ved hjelp av PowerShell.**
 
 ```powershell
-
 
 ## Import active directoy module for å kjøre AD cmdlets
 
