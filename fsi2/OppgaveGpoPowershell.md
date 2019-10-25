@@ -64,7 +64,8 @@ Først må man laste ned en MSI ifra Google for å bruke denne igjennom GPO. Den
 ![Chrome](https://image.larsenjr.no/2019-10-22_QRDG1w.png)
 
 Lag ny policy:
-[NewPolicy](https://image.larsenjr.no/2019-10-22_U7Ft5i.png)
+
+![NewPolicy](https://image.larsenjr.no/2019-10-22_U7Ft5i.png)
 
 Gå til:
 `User Configuration -> Polices -> Software Settings -> Software Installation`
@@ -103,11 +104,11 @@ Man kan enten ta å disable hele brukeren slik at man ikke får tilgang når han
 
 ### Oppgave 5. Hvordan kan man se alle shares på serveren (hidden eller ikke) fra klient-maskinen? Vis med screenshot
 
-Mappa er sharet, men er hidden.
+Mappa er sharet, men er hidden for users.
 
 ![HiddenProperties](https://image.larsenjr.no/2019-10-22_Kkjvxu.png)
 
-Hidden share vises ikke her.
+Hidden share vises ikke her når man skriver inn `\\172.16.15.5` som er IPen til serveren.
 
 ![HiddenShares](https://image.larsenjr.no/2019-10-22_lq59Nq.png)
 
@@ -207,6 +208,9 @@ foreach ($User in $ADUser) {
 
 ```
 
+Fil som blir importert gjennom Powershell i AD. Ikke alle feltene blir fylt ut, men det som er default og det som passer med powershell scriptet. 
+
 [ImportAccounts.csv](https://image.larsenjr.no/2019-10-25_b2DxWZ.csv)
 
+Resultat
 ![ResultatPSImport](https://image.larsenjr.no/2019-10-25_NETFd0.png)
