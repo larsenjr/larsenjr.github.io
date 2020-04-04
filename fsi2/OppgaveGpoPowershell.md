@@ -61,18 +61,27 @@ Skriv:
 
 Først må man laste ned en MSI ifra Google for å bruke denne igjennom GPO. Den finnes [her](https://cloud.google.com/chrome-enterprise/browser/download/)
 
-![Chrome](https://image.larsenjr.no/2019-10-22_QRDG1w.png)
-
 Lag ny policy:
 
-![NewPolicy](https://image.larsenjr.no/2019-10-22_U7Ft5i.png)
+![Chrome](https://image.larsenjr.no/2019-10-22_QRDG1w.png)
 
 Gå til:
 `User Configuration -> Polices -> Software Settings -> Software Installation`
 
+![NewPolicy](https://image.larsenjr.no/2019-10-22_U7Ft5i.png)
+
+OBS! Det er viktig å legge til at MSI-fila må lagres på et "share" som brukeren har tilgang til.
+
+I mitt tilfelle har jeg bare laget en mappe på `C:` der jeg deler mappa med `everyone`.
+Ikke `best practice`, men det går for nå :)
+
+Uansett,
+
 Legg til MSI filen og trykk "assigned". Når du har godtatt, gå inn på `properties` og trykk `install application on logon`:
 
 ![ApplyLogon](https://image.larsenjr.no/2019-10-22_UMB0Ki.png)
+
+Legg til Group Policy til den respektive OU-en som skal ha Google Chrome.
 
 Når brukeren logger på neste gang vil det installeres Google Chrome før brukeren kommer inn i desktop.
 
