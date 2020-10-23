@@ -110,6 +110,7 @@ div.image {
 h1, h2, h3 {
     position:center;
     margin:auto;
+    color: black;
     font-family: 'Roboto';
 }
 .zoom {
